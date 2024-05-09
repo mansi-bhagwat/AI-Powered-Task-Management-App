@@ -11,14 +11,20 @@
    npm -v
 
    Open a new terminal and follow below steps for starting backend server
+
    cd backend/
+
    npm i express nodemon
+
    npm run dev
    
 6. Open a new terminal and follow below steps for starting frontend server
+
    cd frontend/
+
    npm install vite --save-dev
+
    npm run dev
 
-7. Follow front end link in browser
+8. Follow front end link in browser
    http://localhost:5173/
