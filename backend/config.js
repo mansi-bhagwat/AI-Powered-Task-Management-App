@@ -1,3 +1,4 @@
+/*
 export const PORT = 5555;
 
 export const mongoDBURL =
@@ -5,3 +6,9 @@ export const mongoDBURL =
 
 // Please create a free database for yourself.
 // This database will be deleted after tutorial
+*/
+
+export const PORT = 5555;
+
+export const mongoDBURL = 
+'mongodb+srv://root:apple098@mern-cluster.hlkkxym.mongodb.net/books-collection?retryWrites=true&w=majority&appName=MERN-Cluster';

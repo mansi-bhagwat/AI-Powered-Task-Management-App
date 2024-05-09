@@ -1,17 +1,21 @@
 import mongoose from 'mongoose';
 
-const bookSchema = mongoose.Schema(
+const taskSchema = mongoose.Schema(
   {
-    title: {
+    task: {
       type: String,
       required: true,
     },
-    author: {
+    description: {
       type: String,
       required: true,
     },
-    publishYear: {
+    priority: {
       type: Number,
+      required: true,
+    },    
+    deadline: {
+      type: Date,
       required: true,
     },
   },
@@ -20,4 +24,4 @@ const bookSchema = mongoose.Schema(
   }
 );
 
-export const Book = mongoose.model('Book', bookSchema);
+export const Task = mongoose.model('Task', taskSchema);
