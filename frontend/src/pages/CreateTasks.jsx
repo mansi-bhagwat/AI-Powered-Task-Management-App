@@ -19,7 +19,7 @@ const CreateTasks = () => {
       task,
       description,
       priority,
-      deadline,
+      deadline
     };
     setLoading(true);
     axios

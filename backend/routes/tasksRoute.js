@@ -68,10 +68,11 @@ router.put('/:id', async (request, response) => {
       !request.body.task ||
       !request.body.description ||
       !request.body.priority ||
-      !request.body.deadline
+      !request.body.deadline ||
+      !request.body.status
     ) {
       return response.status(400).send({
-        message: 'Send all required fields: task, description, priority, deadline',
+        message: 'Send all required fields: task, description, priority, deadline, status',
       });
     }
 

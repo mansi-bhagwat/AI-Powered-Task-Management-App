@@ -10,6 +10,7 @@ const EditTask = () => {
   const [description, setDescription] = useState('');
   const [priority, setPriority] = useState('');
   const [deadline, setDeadline] = useState('');
+  const [status, setStatus] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const {id} = useParams();
@@ -23,6 +24,7 @@ const EditTask = () => {
         setDescription(response.data.description)
         setPriority(response.data.priority)
         setDeadline(response.data.deadline)
+        setStatus(response.data.status)
         setLoading(false);
       }).catch((error) => {
         setLoading(false);
@@ -37,6 +39,7 @@ const EditTask = () => {
       description,
       priority,
       deadline,
+      status,
     };
     setLoading(true);
     axios
@@ -95,6 +98,18 @@ const EditTask = () => {
             onChange={(e) => setDeadline(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
+        </div>
+        <div className='my-4'>
+          <label className='text-xl mr-4 text-gray-500'>Status</label>
+          <select
+          value={status}
+          onChange={(e) => setStatus(e.target.value)}
+          className='border-2 border-gray-500 px-4 py-2 w-full'
+          >
+          <option value='not started'>Not Started</option>
+          <option value='in progress'>In Progress</option>
+          <option value='done'>Done</option>
+        </select>
         </div>
         <button className='p-2 bg-sky-300 m-8' onClick={handleEditBook}>
           Save
