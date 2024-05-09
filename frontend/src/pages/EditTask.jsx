@@ -106,9 +106,9 @@ const EditTask = () => {
           onChange={(e) => setStatus(e.target.value)}
           className='border-2 border-gray-500 px-4 py-2 w-full'
           >
-          <option value='not started'>Not Started</option>
-          <option value='in progress'>In Progress</option>
-          <option value='done'>Done</option>
+          <option value='Not Started'>Not Started</option>
+          <option value='In Progress'>In Progress</option>
+          <option value='Done'>Done</option>
         </select>
         </div>
         <button className='p-2 bg-sky-300 m-8' onClick={handleEditBook}>
