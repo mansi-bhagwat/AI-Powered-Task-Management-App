@@ -18,7 +18,7 @@ const DeleteTask = () => {
       .then(() => {
         setLoading(false);
         enqueueSnackbar('Task Deleted successfully', { variant: 'success' });
-        navigate('/');
+        navigate('/home');
       })
       .catch((error) => {
         setLoading(false);

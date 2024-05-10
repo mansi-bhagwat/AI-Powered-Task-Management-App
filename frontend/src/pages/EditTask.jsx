@@ -47,7 +47,7 @@ const EditTask = () => {
       .then(() => {
         setLoading(false);
         enqueueSnackbar('Task Edited successfully', { variant: 'success' });
-        navigate('/');
+        navigate('/home');
       })
       .catch((error) => {
         setLoading(false);

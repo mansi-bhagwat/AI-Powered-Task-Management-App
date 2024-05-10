@@ -27,7 +27,7 @@ const CreateTasks = () => {
       .then(() => {
         setLoading(false);
         enqueueSnackbar('Task Created successfully', { variant: 'success' });
-        navigate('/');
+        navigate('/home');
       })
       .catch((error) => {
         setLoading(false);
