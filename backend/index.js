@@ -2,6 +2,7 @@ import express from 'express';
 import { PORT, mongoDBURL } from './config.js';
 import mongoose from 'mongoose';
 import booksRoute from './routes/tasksRoute.js';
+import openAIRoute from './routes/openAIRoute.js';
 import cors from 'cors';
 
 const app = express();
@@ -27,6 +28,7 @@ app.get('/', (request, response) => {
 });
 
 app.use('/tasks', booksRoute);
+app.use('/openai', openAIRoute);
 
 mongoose
   .connect(mongoDBURL)
