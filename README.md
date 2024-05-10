@@ -24,6 +24,8 @@
 
    npm install vite --save-dev
 
+   npm install victory
+
    npm run dev
 
 8. Follow front end link in browser

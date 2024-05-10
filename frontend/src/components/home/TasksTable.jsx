@@ -19,6 +19,9 @@ const TasksTable = ({ tasks }) => {
           <th className='border border-slate-600 rounded-md max-md:hidden'>
             Deadline
           </th>
+          <th className='border border-slate-600 rounded-md max-md:hidden'>
+            Status
+          </th>
           <th className='border border-slate-600 rounded-md'>Operations</th>
         </tr>
       </thead>
@@ -39,6 +42,9 @@ const TasksTable = ({ tasks }) => {
             </td>
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
               {task.deadline}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {task.status}
             </td>
             <td className='border border-slate-700 rounded-md text-center'>
               <div className='flex justify-center gap-x-4'>
