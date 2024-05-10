@@ -4,7 +4,7 @@ import OpenAI from 'openai';
 
 const router = express.Router();
 const openai = new OpenAI({
-  apiKey: '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',
+  apiKey: API_KEY,
 });
 
 const isValidJson = (str) => {
