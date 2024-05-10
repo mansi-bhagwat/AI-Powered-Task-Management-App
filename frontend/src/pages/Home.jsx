@@ -57,9 +57,11 @@ const Home = () => {
         <TasksCard tasks={tasks} />
       )}
       <div className='flex justify-center mt-4'> {/* Add this container */}
-        <button className='bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg mr-2'>
-          Show My Progress
-        </button>
+        <Link to='/show-my-progress'>
+          <button className='bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg mr-2'>
+            Show My Progress
+          </button>
+        </Link>
         <button className='bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg ml-2'>
           View Personalized Plan
         </button>
