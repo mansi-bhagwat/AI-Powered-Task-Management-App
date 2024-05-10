@@ -16,6 +16,8 @@
 
    npm i express nodemon
 
+   npm install openai
+
    npm run dev
    
 6. Open a new terminal and follow below steps for starting frontend server
